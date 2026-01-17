@@ -91,7 +91,7 @@ function! s:init_buffer_tex() abort " {{{1
     execute 'set suffixes+=' . l:suf
   endfor
   setlocal suffixesadd=.tex,.sty,.cls
-  setlocal iskeyword+=:
+  " setlocal iskeyword+=:
   setlocal includeexpr=vimtex#include#expr()
 
   let &l:include = g:vimtex#re#tex_include
